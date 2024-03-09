@@ -1,0 +1,29 @@
+#
+# Copyright (C) 2024 Plants.
+#
+# Plants is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+
+version: "3"
+
+services:
+  database:
+    image: postgres:14
+    restart: "unless-stopped"
+    container_name: plants-database
+    environment:
+      - "POSTGRES_USER=plants"
+      - "POSTGRES_PASSWORD=plants"
+      - "POSTGRES_DB=plants"
+    ports:
+      - 5432:5432
+  service:
+    image: plants/api:v0.1.0
+    build: .
+    container_name: plants-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ${PWD}/settings.toml:/app/settings.toml:ro
+      - ${PWD}/gunicorn.config.py:/app/gunicorn.config.py:ro

@@ -1,0 +1,43 @@
+#
+# Copyright (C) 2024 Plants.
+#
+# Plants is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+
+[default]
+#
+# Flask configurations
+#
+SERVER_NAME = "127.0.0.1:8000"
+APPLICATION_ROOT = "/"
+
+#
+# CORS configuration
+#
+CORS_RESOURCES = ["*"]
+
+CORS_METHODS = ["GET"]
+CORS_ORIGINS = ["http://localhost:5000", "http://localhost:8000"]
+
+
+#
+# IIIF
+#
+IIIF_API_PREFIX = "/iiif/"
+
+#
+# Database configuration
+#
+SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://plants:plants@database:5432/plants"
+
+#
+# Storage configuration
+#
+STORAGE_DIR = "./data/"
+
+#
+# Alembic configuration
+#
+ALEMBIC.compare_type = "true"
+ALEMBIC.script_location = "migrations"
