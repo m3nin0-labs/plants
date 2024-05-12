@@ -1,4 +1,4 @@
-# Plants
+# Plants 💐📔
 
 The Plants API is a RESTful service designed to make illustrations of plants from old books available through the International Image Interoperability Framework (IIIF), leveraging the Invenio-IIIF library.
 
