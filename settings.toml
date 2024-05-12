@@ -20,7 +20,6 @@ CORS_RESOURCES = ["*"]
 CORS_METHODS = ["GET"]
 CORS_ORIGINS = ["http://localhost:5000", "http://localhost:8000"]
 
-
 #
 # IIIF
 #
@@ -34,7 +33,7 @@ SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://plants:plants@database:5432/pla
 #
 # Storage configuration
 #
-STORAGE_DIR = "./data/"
+STORAGE_DIR = "/app/data/"
 
 #
 # Alembic configuration

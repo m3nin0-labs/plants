@@ -7,6 +7,9 @@
 
 FROM python:3.9
 
+# Env variables
+ENV FLASK_APP="plants/main.py"
+
 # Working directory
 WORKDIR /app
 

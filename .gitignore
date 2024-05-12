@@ -183,8 +183,5 @@ pyrightconfig.json
 # Ignore dynaconf secret files
 .secrets.*
 
-/example/
-/data/
-
 # Ignore sqlite files
 *.db
