@@ -30,7 +30,7 @@ migrations:  ## Run database migrations
 # Example
 #
 ingest:  ## Ingest example data
-	$(RUN_IN_CONTAINER) service python management/ingest/ingest.py
+	$(RUN_IN_CONTAINER) service python example/ingest/ingest.py
 
 #
 # Logs

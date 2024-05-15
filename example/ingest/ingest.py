@@ -6,8 +6,8 @@ from toolbox import ingest_plants_data
 #
 # General definition
 #
-base_data_dir = "management/ingest/data/images"
-definition_file = "management/ingest/data/plants.json"
+base_data_dir = "example/ingest/data/images"
+definition_file = "example/ingest/data/plants.json"
 
 #
 # 1. Transforming directories
